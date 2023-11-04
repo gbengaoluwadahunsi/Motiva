@@ -1,4 +1,4 @@
-import motiva from   "/public/motiva.png"
+import motiva2 from   "../assets/Images/motiva2.png"
 import { useEffect } from "react";
 import  wind from  '../assets/Images/wind.jpg'
 // import { Link } from 'react-router-dom'
@@ -14,7 +14,7 @@ import  '../index.css'
     <>
       <section  loading = "lazy" className="  h-80 md:h-screen lg:h-screen   bg-center bg-cover bg-no-repeat bk" >
         <div className="grid grid-cols-6 font-bold  p-4 lg:px-10 lg:py-3 bg-cyan-900"> 
-        <img className=" w-10 h-10 lg:w-20 rounded-full lg:h-20" src={motiva} alt="" />
+        <img className=" w-10 h-10 lg:w-14 rounded-full lg:h-14" src={motiva2} alt="" />
         <div className="col-span-5 grid grid-cols-2 lg:gap-20 items-center">
         <div className=" grid grid-cols-5 gap-3 py-3 text-cyan-50 list-none ">
             <li className="justify-self-center">How it works</li>
