@@ -19,10 +19,10 @@ import  '../index.css'
         </div>
          <main className=" p-1 lg:p-10">
             
-                <div className=" flex flex-col gap-6 text-center lg:mt-28">
+                <div className=" flex flex-col gap-6 text-center  mt-10 lg:mt-28">
 
                 <h1 className="font-extrabold  text-4xl lg:text-9xl text-cyan-950">Motiva</h1>
-                <h3 className=" text-2xl text-white font-bold">Create custom  designs from motivational quotes that are wearable and tappable.</h3>
+                <h3 className=" text-xl lg:text-2xl text-white font-bold">Create custom  designs from motivational quotes that are wearable and tappable.</h3>
                 </div>
          </main>
 
