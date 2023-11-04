@@ -30,7 +30,7 @@ import  '../index.css'
 
         </div>
 
-        <main className=" p-1 lg:p-10">
+        <main className=" p-4 lg:p-10">
             
                 <div className=" flex flex-col gap-6 text-center  mt-10 lg:mt-28">
 
