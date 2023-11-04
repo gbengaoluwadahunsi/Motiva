@@ -13,15 +13,17 @@ import  '../index.css'
   return (
     <>
       <section  loading = "lazy" className="  h-80 md:h-screen lg:h-screen   bg-center bg-cover bg-no-repeat bk" >
-        <div className="grid grid-cols-4  p-4 lg:px-6 lg:py-3 bg-cyan-900"> 
+        <div className="grid grid-cols-6 font-bold  p-4 lg:px-10 lg:py-3 bg-cyan-900"> 
         <img className=" w-10 h-10 lg:w-20 rounded-full lg:h-20" src={motiva} alt="" />
-        <div className="col-span-3  items-center  text-cyan-100 list-none grid grid-cols-6">
-            <li>About</li>
-            <li>About</li>
-            <li>About</li>
-            <li>About</li>
-            <li>ABout</li>
-            <li>About</li>
+        <div className="col-span-5 grid grid-cols-2 lg:gap-20 items-center">
+        <div className=" grid grid-cols-5 gap-3 py-3 text-cyan-50 list-none ">
+            <li className="justify-self-center">How it works</li>
+            <li className="  col-span-2 justify-self-center">Get Motivational Quotes</li>
+            <li className="col-span-2 ">Make your design</li>
+            
+        </div>
+        <button className="items-center text-cyan-100 list-none justify-self-end bg-cyan-500 w-28 px-4  py-3 rounded-full  ">Log in
+        </button>
         </div>
         </div>
          <main className=" p-1 lg:p-10">
