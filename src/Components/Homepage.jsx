@@ -1,8 +1,15 @@
 import motiva from   "/public/motiva.png"
+import { useEffect } from "react";
+import  wind from  '../assets/Images/wind.jpg'
 // import { Link } from 'react-router-dom'
 import  '../index.css'
 
  const Homepage = () => {
+
+  useEffect(() => {
+    const img = new Image();
+    img.src = wind;
+  }, []);
   return (
     <>
       <section  loading = "lazy" className="  h-80 md:h-screen lg:h-screen   bg-center bg-cover bg-no-repeat bk" >
