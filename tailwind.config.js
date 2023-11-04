@@ -8,9 +8,7 @@ export default {
   theme: {
     extend: {
 
-      backgroundImage: {
-        'img': "url('wind.jpg')",
-      },
+      
     },
   },
   plugins: [],

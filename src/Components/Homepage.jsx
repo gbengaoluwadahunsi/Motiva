@@ -5,7 +5,7 @@ import  '../index.css'
  const Homepage = () => {
   return (
     <>
-      <section className="  h-80 md:h-screen lg:h-screen   bg-center bg-cover bg-no-repeat bg-img" >
+      <section  loading = "lazy" className="  h-80 md:h-screen lg:h-screen   bg-center bg-cover bg-no-repeat bk" >
         <div className="grid grid-cols-4  p-4 lg:px-6 lg:py-3 bg-cyan-900"> 
         <img className=" w-10 h-10 lg:w-20 rounded-full lg:h-20" src={motiva} alt="" />
         <div className="col-span-3  items-center  text-cyan-100 list-none grid grid-cols-6">
