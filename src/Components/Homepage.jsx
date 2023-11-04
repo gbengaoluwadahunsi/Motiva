@@ -46,7 +46,7 @@ import  '../index.css'
               <div className="flex flex-col  gap-6">
                 <h2 className="  font-extrabold text-cyan-950 text-3xl">GET QUOTES</h2>
                 <div className="font-semibold  text-justify lg:text-xl shadow-2xl lg:p-10 text-cyan-700">
-                  <h4 className="  ">Great quotes are good sources of encouragement that can help us to forge ahead towards our dreams, give the down throden the strength to start over and keep the high flyers disciplined.</h4>
+                  <h4 className="  ">Amazing quotes are a fantastic way for high achievers to maintain self-control, to stay motivated, and to offer hope to those who are struggling.</h4>
                   <span className=" block mt-8 text-justify-center">...  Anonymous</span>
                 </div>
                 <button className="items-center text-cyan-100  font-bold list-none justify-self-end bg-cyan-700 w-40 px-6  py-4 rounded-full hover:scale-125 ">Get Quotes</button>
