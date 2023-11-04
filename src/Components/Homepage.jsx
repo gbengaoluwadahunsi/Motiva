@@ -20,11 +20,11 @@ import  '../index.css'
 
             <div className="  col-span-2 grid grid-cols-5 gap-3 py-3 text-cyan-50 list-none ">
                 <li className="   justify-self-center">How it works</li>
-                <li className="   col-span-2  ml-2 justify-self-center">Get Motivational Quotes</li>
+                <li className="   col-span-2  ml-2 justify-self-center">Get motivational quotes</li>
                 <li className="  col-span-2 ">Make your design</li>
                 
             </div>          
-            <button className="items-center text-cyan-100 list-none justify-self-end bg-cyan-500 w-28 px-4  py-3 rounded-full  ">Log in</button>
+            <button className="items-center text-cyan-100 list-none justify-self-end bg-cyan-500 w-28 px-4  py-2 rounded-full  ">Log in</button>
             
           </div>
 
@@ -35,7 +35,7 @@ import  '../index.css'
                 <div className=" flex flex-col gap-6 text-center  mt-10 lg:mt-28">
 
                 <h1 className="font-extrabold  text-4xl md:text-6xl lg:text-9xl text-cyan-950">Motiva</h1>
-                <h3 className=" text-md lg:text-2xl text-white  font-bold">Create custom  designs from motivational quotes that are wearable and tappable.</h3>
+                <h3 className=" text-md lg:text-2xl text-white font-bold  shadow">Create custom  designs from motivational quotes that are wearable and tappable.</h3>
                 </div>
          </main>
 
