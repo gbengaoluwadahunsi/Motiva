@@ -35,7 +35,7 @@ import  '../index.css'
             
                 <div className=" flex flex-col gap-6 text-center  mt-10 lg:mt-28">
 
-                <h1 className="font-extrabold  text-4xl md:text-6xl lg:text-7xl text-cyan-950">Motiva</h1>
+                <h1 className="font-extrabold  text-4xl md:text-6xl lg:text-8xl text-cyan-950">Motiva</h1>
                 <h3 className=" text-md lg:text-2xl text-white font-bold  shadow">Create custom  designs from motivational quotes that are wearable and tappable.</h3>
                 </div>
          </main>
