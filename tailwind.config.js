@@ -7,7 +7,9 @@ export default {
   "./src/**/*.{js,ts,jsx,tsx}",],
   theme: {
     extend: {
-
+      height: {
+        'heightMedium': '30rem', 
+      },
       
     },
   },
