@@ -16,12 +16,12 @@ import  '../index.css'
         <div className="grid grid-cols-6 font-bold  p-4 lg:px-10 lg:py-3 bg-cyan-900"> 
           <img className=" w-10 h-10 lg:w-14 rounded-full lg:h-14" src={motiva2} alt="" />
           
-          <div className="col-span-5 grid grid-cols-2 lg:gap-20 items-center">
+          <div className="col-span-5 grid grid-cols-3 lg:gap-20 items-center">
 
-            <div className=" grid grid-cols-5 bg-black gap-3 py-3 text-cyan-50 list-none ">
-                <li className=" bg-red-500 w-full  justify-self-start">How it works</li>
-                <li className="   bg-red-200 col-span-2  ml-2 justify-self-center">Get Motivational Quotes</li>
-                <li className=" bg-green-700 col-span-2 ">Make your design</li>
+            <div className="  col-span-2 grid grid-cols-5 bg-black gap-3 py-3 text-cyan-50 list-none ">
+                <li className="   justify-self-center">How it works</li>
+                <li className="   col-span-2  ml-2 justify-self-center">Get Motivational Quotes</li>
+                <li className="  col-span-2 ">Make your design</li>
                 
             </div>          
             <button className="items-center text-cyan-100 list-none justify-self-end bg-cyan-500 w-28 px-4  py-3 rounded-full  ">Log in</button>
