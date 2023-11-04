@@ -9,7 +9,7 @@ export default {
     extend: {
 
       backgroundImage: {
-        'img': "url('src/assets/Images/wind.jpg')",
+        'img': "url('public/wind.jpg')",
       },
     },
   },
