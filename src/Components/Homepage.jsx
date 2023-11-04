@@ -12,7 +12,7 @@ import  '../index.css'
   }, []);
   return (
     <>
-      <section  loading = "lazy" className="  h-80 h-heightMedium lg:h-screen   bg-center bg-cover bg-no-repeat bk" >
+      <section  loading = "lazy" className="  h-heightMedium lg:h-screen   bg-center bg-cover bg-no-repeat bk" >
         <div className="grid grid-cols-6 font-bold  p-4 lg:px-10 lg:py-3 bg-cyan-900"> 
           <img className=" w-10 h-10 lg:w-14 rounded-full lg:h-14" src={motiva2} alt="" />
           
