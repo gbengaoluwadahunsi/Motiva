@@ -25,7 +25,7 @@ import  '../index.css'
                 <li className="  col-span-2 ">Make your design</li>
                 
             </div>          
-            <button className="items-center text-cyan-100 list-none justify-self-end bg-cyan-700 w-40 px-6  py-4 rounded-full hover:scale-125 ">Log in</button>
+            <button className="items-center text-cyan-100 list-none justify-self-end bg-cyan-700 w-40 px-6  py-4 rounded-full hover:scale-95 ">Log in</button>
             
           </div>
 
@@ -49,7 +49,7 @@ import  '../index.css'
                   <h4 className="  ">Amazing quotes are a fantastic way for high achievers to maintain self-control, to stay motivated, and to offer hope to those who are struggling.</h4>
                   <span className=" block mt-8 text-justify-center">...  Anonymous</span>
                 </div>
-                <button className="items-center text-cyan-100  font-bold list-none justify-self-end bg-cyan-700 w-40 px-6  py-4 rounded-full hover:scale-125 ">Get Quotes</button>
+                <button className="items-center text-cyan-100  font-bold list-none justify-self-end bg-cyan-700 w-40 px-6  py-4 rounded-full hover:scale-95">Get Quotes</button>
                 </div>        
 
               <img src={worryLess} alt="worry Less image" className="rounded drop-shadow-2xl " />
