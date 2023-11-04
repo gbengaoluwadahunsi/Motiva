@@ -18,8 +18,8 @@ import  '../index.css'
           
           <div className="col-span-5 grid grid-cols-2 lg:gap-20 items-center">
 
-            <div className=" grid grid-cols-5  py-3 text-cyan-50 list-none ">
-                <li className=" justify-self-start">How it works</li>
+            <div className=" grid grid-cols-5 gap-3 py-3 text-cyan-50 list-none ">
+                <li className=" w-full justify-self-start">How it works</li>
                 <li className="  col-span-2 justify-self-center">Get Motivational Quotes</li>
                 <li className="col-span-2 ">Make your design</li>
                 
