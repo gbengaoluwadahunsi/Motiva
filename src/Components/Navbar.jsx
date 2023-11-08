@@ -8,7 +8,7 @@ const Navbar = ()  => {
           
           <div className="col-span-11 grid grid-cols-5 items-center">
 
-            <div className="  col-span-4 grid grid-cols-6  py-3 font-bold lg:text-xl  text-cyan-50 ">
+            <div className="  col-span-4 grid grid-cols-6  py-3 font-bold lg:text-lg text-cyan-50 ">
                 <Link to = "/" className="justify-self-center  decoration-cyan-500 decoration-2 hover:underline hover:underline-offset-8 ">Home</Link>
                 <Link to = "/howitworks" className="justify-self-center  decoration-cyan-500 decoration-2 hover:underline hover:underline-offset-8">How it works</Link>
                 <Link to = "/getquotes" className="col-span-2   justify-self-center  decoration-cyan-500 decoration-2 hover:underline hover:underline-offset-8">Get motivational quotes</Link>
