@@ -51,7 +51,7 @@ import {Link} from 'react-router-dom'
          <section className=" flex flex-col gap-5 p-4 lg:mx-16 rounded lg:p-20 text-white data-te-lazy-load-init background-motivas hangerheight hanger  ">
             <h2 className=" text-center font-extrabold text-cyan-900 text-5xl "> CREATE YOUR MOTIVA</h2>
 
-              <div className="font-bold  text-center lg:text-2xl flex flex-col space-y-8 mx-auto lg:p-16  create">
+              <div className="font-bold  text-center lg:text-xl flex flex-col space-y-6 mx-auto lg:p-8  create">
               <p className="shadow">Create personalized or generate regular quotes for your t-shirts or social media posts with Motiva,</p>
               <p className="shadow">use them for your events, festivals, brand merchandise and more.</p>
               </div>
