@@ -22,5 +22,42 @@
   text-shadow: rgb(7, 51, 51) 1px 0 10px;
 }
 
+.shadow2{
+  text-shadow: rgb(1, 14, 14) 2px 0 10px;
+}
 
+.hanger{
+  
+  background-image: linear-gradient(to bottom, rgba(161, 220, 243, 0.52), rgba(150, 211, 235, 0.73)), url("./assets/Images/tshirtsHanger.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+  
+}
+
+.wid{
+  width: 50rem;
+}
+
+
+.hangerheight{
+  height: 35rem;
+}
+
+.login-background{
+  background-image: linear-gradient( to bottom , rgba(29, 29, 128, 0.53), rgba(29, 29, 128,0.75)) , url("./assets/Images/loginbackground.jpg");
+}
+
+#mySelect option:hover {
+  color : white;
+  background-color: rgb(22 78 99 )
+}
+
+.tshirt-image {
+  filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+}
+
+.imageHeight{
+  height : 30rem;
+}
 
