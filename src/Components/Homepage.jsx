@@ -52,7 +52,7 @@ import {Link} from 'react-router-dom'
             <h2 className=" text-center font-extrabold text-cyan-900 text-5xl "> CREATE YOUR MOTIVA</h2>
 
               <div className="font-bold  text-center lg:text-2xl flex flex-col space-y-8 mx-auto lg:p-16  create">
-              <p>Create personalized or generate regular quotes for your t-shirts or social media posts with Motiva,</p>
+              <p className="shadow">Create personalized or generate regular quotes for your t-shirts or social media posts with Motiva,</p>
               <p className="">use them for your events, festivals, brand merchandise and more.</p>
               </div>
               <Link to = "/howitworks"><button className="flex flex-col items-center mx-auto justify-center text-cyan-100 text-center font-bold list-none justify-self-end bg-cyan-900  px-6  py-4 rounded-lg hover:scale-95">Get Your Motiva</button></Link>            
