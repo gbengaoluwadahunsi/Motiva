@@ -93,7 +93,7 @@ const MakeYourDesigns = ({ quote }) => {
                 <img src="https://i.imgur.com/frhnBT1.png" alt="T-Shirt Design" className='w-full  h-full object-contain'/>
 
                 <div
-                className=' h-48 w-60 text-center font-bold absolute'
+                className=' h-48 w-48 text-center font-bold absolute'
                   style={{
                    
                     top: '42%',
