@@ -7,7 +7,7 @@ import domtoimage from 'dom-to-image';
 const MakeYourDesigns = ({ quote }) => {
   const [tshirtColor, setTshirtColor] = useState('#ffffff');
   const [textColor, setTextColor] = useState('#071b1b');
-  const [fontSize, setFontSize] = useState(2);
+  const [fontSize, setFontSize] = useState(25);
 
   const handleTshirtColorChange = (e) => {
     setTshirtColor(e.target.value);
@@ -93,19 +93,20 @@ const MakeYourDesigns = ({ quote }) => {
                 <img src="https://i.imgur.com/frhnBT1.png" alt="T-Shirt Design" className='w-full  h-full object-contain'/>
 
                 <div
+                className=' h-48 w-60 text-center font-bold absolute'
                   style={{
-                    position: 'absolute',
-                    top: '40%',
+                   
+                    top: '42%',
                     left: '50%',
                     transform: 'translate(-50%, -50%)',
                     color: textColor,
-                    fontSize: `${fontSize}em`,
-                    fontWeight: 'bold',
-                    textAlign: 'center',
-                    width: '12rem'
+                    fontSize: `${fontSize}px`,
+                    
+                    
+                    
                   }}
                 >
-                  {quote ? quote.text : 'Your QUOTE Here55555555555555555uuuuuuuuuuuuuu5555'}
+                  {quote ? quote.text : 'Your QUOTE Here'}
                 </div>
               </div>
             </div>
