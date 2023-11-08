@@ -7,7 +7,7 @@ import domtoimage from 'dom-to-image';
 const MakeYourDesigns = ({ quote }) => {
   const [tshirtColor, setTshirtColor] = useState('#ffffff');
   const [textColor, setTextColor] = useState('#071b1b');
-  const [fontSize, setFontSize] = useState(25);
+  const [fontSize, setFontSize] = useState(20);
 
   const handleTshirtColorChange = (e) => {
     setTshirtColor(e.target.value);
