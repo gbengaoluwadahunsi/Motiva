@@ -45,7 +45,7 @@
 }
 
 .login-background{
-  background-image: linear-gradient( to bottom , rgba(29, 29, 128, 0.53), rgba(29, 29, 128,0.75)) , url("./assets/Images/loginbackground.jpg");
+  background-image: linear-gradient( to bottom , rgba(3, 17, 17, 0.53) ,  rgba(3, 17, 17, 0.72)) , url("./assets/Images/loginbackground.jpg");
 }
 
 #mySelect option:hover {
