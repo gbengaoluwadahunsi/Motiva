@@ -4,6 +4,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { signInWithEmailAndPassword, GoogleAuthProvider, FacebookAuthProvider, signInWithPopup } from 'firebase/auth';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import image from '/public/motiva.png';
+import  google from '/src/assets/Images/Google.png'
 import { FaFacebook } from 'react-icons/fa'
 import { auth } from './Firebase'; 
 
@@ -73,7 +74,7 @@ const Login = () => {
           onSubmit={handleLogin}
         >
           {({ isSubmitting }) => (
-            <Form  className='row-span-3 bg-white grid grid-row-5 '>
+            <Form  className='row-span-3 bg-white grid grid-row-6 '>
               <Field className='px-4  h-8 lg:h-14  rounded border-2 border-cyan-950 bg-gray-100 row-span-2' type="email" name="email" placeholder="Email Address" />
               <ErrorMessage className='text-red-700 font-semibold' name="email" component="div" />
               <div className=' w-full   bg-gray-100 rounded relative h-8 b lg:h-14'>
@@ -102,7 +103,7 @@ const Login = () => {
         <span className='mx-auto  lg:font-bold text-cyan-950'>OR</span>
         <div className="flex  flex-col justify-center gap-4">
           <button className="bg-red-500 flex flex-row items-center  justify-center lg:font-extrabold gap-4 px-4  py-2 rounded h-8 lg:h-14 text-white" onClick={handleGoogleSignIn}>
-          <FaFacebook  className='-ml-4 lg:text-xl'/><>Sign in with Google</>
+          <img src= {google} className='-ml-4   w-5 bg-white rounded-full' sizes=''/><>Sign in with Google</>
           </button>
           <button className="bg-blue-900 flex flex-row items-center  justify-center lg:font-extrabold gap-4 px-4  py-2 rounded h-8 lg:h-14 text-white" onClick={handleFacebookSignIn}>
           <FaFacebook  className='lg:text-xl'/><span >Sign in with Facebook</span>
