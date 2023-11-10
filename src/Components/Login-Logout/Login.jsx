@@ -74,7 +74,7 @@ const Login = () => {
           onSubmit={handleLogin}
         >
           {({ isSubmitting }) => (
-            <Form  className='row-span-3 bg-white grid grid-row-6 '>
+            <Form  className='row-span-3 bg-white grid grid-row-6 gap-2 '>
               <Field className='px-4  h-8 lg:h-14  rounded border-2 border-cyan-950 bg-gray-100 row-span-2' type="email" name="email" placeholder="Email Address" />
               <ErrorMessage className='text-red-700 font-semibold' name="email" component="div" />
               <div className=' w-full   bg-gray-100 rounded relative h-8 b lg:h-14'>
