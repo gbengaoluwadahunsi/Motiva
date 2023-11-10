@@ -9,6 +9,7 @@ export default {
     extend: {
       height: {
         'heightMedium': '30rem', 
+         'formHeight' : '90%'
       },
       
     },
