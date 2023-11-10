@@ -149,7 +149,7 @@ const SignUp = () => {
             </Form>
           )}
         </Formik>
-        <Link className="font-bold" to="/signin">
+        <Link className="font-bold" to="/login">
           Already have an account? <span className="font-extrabold">Sign In</span>
         </Link>
       </div>

@@ -50,7 +50,7 @@ const Login = () => {
 
   return (
     <div className='h-screen grid place-items-center bg-center login-background'>
-      <div className="bg-white text-center mx-auto grid grid-rows-6 lg:h-full gap-2 p-4 rounded-lg lg:w-1/4 ">
+      <div className="bg-white text-center mx-auto grid grid-rows-4 lg:h-3/4 gap-2 p-4 rounded-lg lg:w-1/4 ">
         <img className="w-10 h-10 lg:w-20 rounded-full border-4 border-cyan-950 mx-auto lg:h-20" src={image} alt="motiva logo" />
         <h1 className='text-cyan-900 font-extrabold lg:text-xl'>Welcome back, Sign In</h1>
         {error && <div className="text-red-700 font-semibold">{error}</div>}
@@ -73,7 +73,7 @@ const Login = () => {
           onSubmit={handleLogin}
         >
           {({ isSubmitting }) => (
-            <Form  className='row-span-4 bg-white grid grid-row-5 '>
+            <Form  className='row-span-2 bg-white grid grid-row-5 '>
               <Field className='px-4  h-8 lg:h-14  rounded border-2 border-cyan-950 bg-gray-100 row-span-2' type="email" name="email" placeholder="Email Address" />
               <ErrorMessage className='text-red-700 font-semibold' name="email" component="div" />
               <div className=' w-full   bg-gray-100 rounded relative h-8 b lg:h-14'>
@@ -93,19 +93,19 @@ const Login = () => {
                 </label>
                 <span className='justify-self-end font-semibold'>Forgot Password?</span>
               </div>
-              <button className='bg-cyan-950 rounded text-sm lg:text-xl h-8 lg:h-14 text-cyan-100 lg:font-extrabold row-span-1' type="submit" disabled={isSubmitting}>
+              <button className='bg-cyan-950 rounded  h-8 lg:h-14 text-cyan-100 lg:font-extrabold row-span-1' type="submit" disabled={isSubmitting}>
                 Sign In
               </button>
             </Form>
           )}
         </Formik>
-        <span className='mx-auto text-sm lg:text-xl lg:font-bold text-cyan-950'>OR</span>
+        <span className='mx-auto  lg:font-bold text-cyan-950'>OR</span>
         <div className="flex  flex-col justify-center gap-4">
           <button className="bg-red-500 flex flex-row items-center  justify-center lg:font-extrabold gap-4 px-4  py-2 rounded h-8 lg:h-14 text-white" onClick={handleGoogleSignIn}>
-          <FaFacebook  className='-ml-4 lg:text-3xl'/><span className='text-sm lg:text-md'>Sign in with Google</span>
+          <FaFacebook  className='-ml-4 lg:text-xl'/><>Sign in with Google</>
           </button>
           <button className="bg-blue-900 flex flex-row items-center  justify-center lg:font-extrabold gap-4 px-4  py-2 rounded h-8 lg:h-14 text-white" onClick={handleFacebookSignIn}>
-          <FaFacebook  className='lg:text-3xl'/><span  className='text-sm lg:text-md'>Sign in with Facebook</span>
+          <FaFacebook  className='lg:text-xl'/><span >Sign in with Facebook</span>
           </button>
         </div>
         <Link className='font-bold' to="/signUp"> No Account? <span className='font-extrabold'>Sign Up</span></Link>
