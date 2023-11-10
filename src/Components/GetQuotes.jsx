@@ -29,13 +29,7 @@ function GetQuotes() {
 
   const getapi = async (url) => {
     try {
-      const response = await fetch(url, {
-
-        headers: {
-          'Authorization': 'b84fa10b09bd66a72a7e8538bbdfb8cd59e98d04'
-      }
-
-      });
+      const response = await fetch(url);
 
       if (!response.ok) {
         throw new Error('Network response was not ok');
@@ -51,7 +45,7 @@ function GetQuotes() {
   const getQuotes = async () => {
     setQuotes([]);
     setIsLoading(true);
-    const apiUrl = `https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json`;
+    const apiUrl = `https://www.thecocktaildb.com/api/json/v1/1/search.php?i=vodka`;
     const data = await getapi(apiUrl);
     if (data) {
       setQuotes(data);
@@ -102,13 +96,14 @@ function GetQuotes() {
             id="mySelect"
             value={selectedOption}
             onChange={handleSelectChange}
-            className="bg-cyan-600 mt-2 text-white w-full outline-none font-bold py-2 px-4 mx-auto text-center rounded"
+            className="border-2  border-cyan-600 mt-2 text-cyan-900 w-full outline-none font-bold py-2 px-4 mx-auto text-center rounded"
+           
           >
             <option value="">Select a quote search option</option>
-            <option value="keyword" className="bg-white text-cyan-900">
+            <option value="keyword">
               Enter search query by keyword (e.g life, work, exercise, meditation, prayer, etc...)
             </option>
-            <option value="author" className="bg-white text-cyan-900">
+            <option value="author">
               Enter search query by author&apos;s name
             </option>
           </select>

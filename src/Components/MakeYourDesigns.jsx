@@ -72,7 +72,7 @@ const MakeYourDesigns = ({ quote }) => {
                 type="number"
                 value={fontSize}
                 onChange={handleFontSizeChange}
-                className="border border-cyan-300 h-10 w-20 rounded"
+                className="border text-center border-cyan-300 h-10 w-20 rounded"
                 min="10"
                 max="10"
               />

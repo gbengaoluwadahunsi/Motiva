@@ -15,7 +15,7 @@ const Navbar = ()  => {
                 <Link  to = "/makedesigns" className="col-span-2  decoration-cyan-500 decoration-2 hover:underline hover:underline-offset-8">Make your design</Link>
                 
             </div>          
-            <Link  to = "/login" className="text-center text-cyan-100 list-none justify-self-end bg-cyan-700 w-40 px-6  py-2 rounded-lg hover:scale-95 ">Log in</Link>
+            <Link to = "/login" className="justify-self-end"><button className="text-center text-cyan-100 list-none  bg-cyan-700 w-40 px-6  py-3 rounded-lg hover:scale-95 ">Sign in</button></Link>
             
           </div>
 
