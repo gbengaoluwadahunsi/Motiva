@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link,  } from 'react-router-dom';
+import { Link,useNavigate  } from 'react-router-dom';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { signInWithEmailAndPassword, GoogleAuthProvider, FacebookAuthProvider, signInWithPopup } from 'firebase/auth';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
@@ -11,14 +11,15 @@ import { auth } from './Firebase';
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState('');
+  const navigate = useNavigate();
  
 
   const handleLogin = async (values) => {
     try {
       const userCredential = await signInWithEmailAndPassword(auth, values.email, values.password);
-      console.log(userCredential);
-      alert('Sign in successful');
-      history.push('/');
+      console.log('Sign up successful:', userCredential.user);
+      alert('Sign up successful');
+      navigate('/');
     } catch (error) {
       console.error(error);
       setError('Email or Password invalid');
@@ -28,9 +29,10 @@ const Login = () => {
   const handleGoogleSignIn = async () => {
     const provider = new GoogleAuthProvider();
     try {
-      await signInWithPopup(auth, provider);
-      alert('Sign in with Google successful');
-      history.push('/');
+      const userCredential = await signInWithPopup(auth, provider);
+       console.log('Sign up successful:', userCredential.user);
+    alert('Sign up successful');
+    navigate('/');
     } catch (error) {
       console.error(error);
       setError('Error signing in with Google');
@@ -40,9 +42,10 @@ const Login = () => {
   const handleFacebookSignIn = async () => {
     const provider = new FacebookAuthProvider();
     try {
-      await signInWithPopup(auth, provider);
-      alert('Sign in with Facebook successful');
-      history.push('/');
+      const userCredential = await signInWithPopup(auth, provider);
+       console.log('Sign up successful:', userCredential.user);
+    alert('Sign up successful');
+    navigate('/');
     } catch (error) {
       console.error(error);
       setError('Error signing in with Facebook');

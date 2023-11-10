@@ -1,16 +1,66 @@
-import  { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { FaEye, FaEyeSlash } from 'react-icons/fa';
+import { useState  } from 'react';
+import { Link ,  useNavigate} from 'react-router-dom';
+import { FaEye, FaEyeSlash, FaFacebook } from 'react-icons/fa';
 import image from '/public/motiva.png';
+import  google from '/src/assets/Images/Google.png'
 import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { createUserWithEmailAndPassword, GoogleAuthProvider, FacebookAuthProvider, signInWithPopup } from 'firebase/auth';
+import { auth } from './Firebase';
 
 const SignUp = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
+
+  const handleSignUp = async (values) => {
+    try {
+      const userCredential = await createUserWithEmailAndPassword(
+        auth,
+        values.email,
+        values.password
+      );
+      console.log('Sign up successful:', userCredential.user);
+      alert('Sign up successful');
+      navigate('/login');
+    } catch (error) {
+      console.error(error);
+      // Handle error and provide feedback to the user
+    }
+  };
+
+  const handleGoogleSignUp = async () => {
+    const provider = new GoogleAuthProvider();
+    try {
+      const userCredential = await signInWithPopup(auth, provider);
+      console.log('Sign up successful:', userCredential.user);
+      alert('Sign up successful');
+      navigate('/login');
+    } catch (error) {
+      console.error(error);
+      // Handle error and provide feedback to the user
+    }
+  };
+
+  const handleFacebookSignUp = async () => {
+    const provider = new FacebookAuthProvider();
+    try {
+      const userCredential = await signInWithPopup(auth, provider);
+      console.log('Sign up successful:', userCredential.user);
+    alert('Sign up successful');
+    navigate('/login');
+    } catch (error) {
+      console.error(error);
+      // Handle error and provide feedback to the user
+    }
+  };
 
   return (
     <div className="h-screen grid place-items-center bg-center login-background">
-      <div className="bg-white text-center mx-auto grid grid-rows-7  h-full gap-2 p-6 rounded-lg w-1/4">
-      <img className="w-10 h-10 lg:w-20 rounded-full border-4 border-cyan-950 mx-auto lg:h-20" src={image} alt="motiva logo" />
+      <div className="bg-white text-center mx-auto grid grid-rows-7   gap-2 p-6 h-full rounded-lg lg:w-1/4">
+        <img
+          className="w-10 h-10 lg:w-20 rounded-full border-4 border-cyan-950 mx-auto lg:h-20"
+          src={image}
+          alt="motiva logo"
+        />
         <h1 className="text-cyan-900 font-extrabold lg:text-xl">
           Create an Account
         </h1>
@@ -42,7 +92,7 @@ const SignUp = () => {
               errors.password = 'Required';
             } else if (!/(?=.*[A-Z])(?=.*[0-9])/.test(values.password)) {
               errors.password =
-                'Password must contain at least one capital letter and one number';
+                'Password must contain at least one uppercase letter and one number';
             }
             if (values.password !== values.confirmPassword) {
               errors.confirmPassword = 'Passwords do not match';
@@ -54,7 +104,7 @@ const SignUp = () => {
           }}
           onSubmit={(values, { setSubmitting }) => {
             setTimeout(() => {
-              alert(JSON.stringify(values, null, 2));
+              handleSignUp(values);
               setSubmitting(false);
             }, 400);
           }}
@@ -132,11 +182,7 @@ const SignUp = () => {
                 component="div"
               />
               <label className="flex flex-row gap-2 items-center mb-4  ">
-                <Field
-                  type="checkbox"
-                  name="agreeToTerms"
-                  className=""
-                />
+                <Field type="checkbox" name="agreeToTerms" className="" />
                 <span className='col-span-3'> I agree to <span className='  text-cyan-950  font-extrabold'>MOTIVA</span>&apos;s Terms of Service</span>
               </label>
               <button
@@ -149,12 +195,33 @@ const SignUp = () => {
             </Form>
           )}
         </Formik>
+        <div className="flex flex-col justify-center gap-4">
+          <button className="bg-red-500 flex flex-row items-center  justify-center lg:font-extrabold gap-4 px-4  py-2 rounded h-14 lg:h-14 text-white"
+            onClick={handleGoogleSignUp}
+          >
+            <img
+              src={google}
+              className="-ml-4 w-5 bg-white rounded-full"
+              alt=""
+            />
+            <>Sign up with Google</>
+          </button>
+          <button
+            className="bg-blue-900 flex flex-row items-center justify-center lg:font-extrabold gap-4 px-4  py-2 rounded h-14 lg:h-14 text-white"
+            onClick={handleFacebookSignUp}
+          >
+            <FaFacebook className="lg:text-xl" />
+            <span>Sign up with Facebook</span>
+          </button>
+        </div>
         <Link className="font-bold" to="/login">
-          Already have an account? <span className="font-extrabold">Sign In</span>
+          Already have an account?{' '}
+          <span className="font-extrabold">Sign In</span>
         </Link>
       </div>
     </div>
   );
-}
+};
 
 export default SignUp;
+
