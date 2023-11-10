@@ -50,7 +50,7 @@ const Login = () => {
 
   return (
     <div className='h-screen grid place-items-center bg-center login-background'>
-      <div className="bg-white text-center mx-auto grid grid-rows-5 formHeight gap-2 p-4 rounded-lg lg:w-1/4 ">
+      <div className="bg-white text-center mx-auto grid grid-rows-5  gap-2 p-4 rounded-lg lg:w-1/4 ">
         <img className="w-10 h-10 lg:w-20 rounded-full border-4 border-cyan-950 mx-auto lg:h-20" src={image} alt="motiva logo" />
         <h1 className='text-cyan-900 font-extrabold lg:text-xl'>Welcome back, Sign In</h1>
         {error && <div className="text-red-700 font-semibold">{error}</div>}
