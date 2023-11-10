@@ -50,7 +50,7 @@ const Login = () => {
 
   return (
     <div className='h-screen grid place-items-center bg-center login-background'>
-      <div className="bg-white text-center mx-auto grid grid-rows-4 formHeight gap-2 p-4 rounded-lg lg:w-1/4 ">
+      <div className="bg-white text-center mx-auto grid grid-rows-5 formHeight gap-2 p-4 rounded-lg lg:w-1/4 ">
         <img className="w-10 h-10 lg:w-20 rounded-full border-4 border-cyan-950 mx-auto lg:h-20" src={image} alt="motiva logo" />
         <h1 className='text-cyan-900 font-extrabold lg:text-xl'>Welcome back, Sign In</h1>
         {error && <div className="text-red-700 font-semibold">{error}</div>}
@@ -73,7 +73,7 @@ const Login = () => {
           onSubmit={handleLogin}
         >
           {({ isSubmitting }) => (
-            <Form  className='row-span-2 bg-white grid grid-row-5 '>
+            <Form  className='row-span-3 bg-white grid grid-row-5 '>
               <Field className='px-4  h-8 lg:h-14  rounded border-2 border-cyan-950 bg-gray-100 row-span-2' type="email" name="email" placeholder="Email Address" />
               <ErrorMessage className='text-red-700 font-semibold' name="email" component="div" />
               <div className=' w-full   bg-gray-100 rounded relative h-8 b lg:h-14'>
