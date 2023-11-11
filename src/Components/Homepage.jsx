@@ -15,7 +15,7 @@ import {Link} from 'react-router-dom'
   }, []);
   return (
     <>
-      <section  loading = "lazy" className="  h-heightMedium lg:h-screen   bg-center bg-cover bg-no-repeat bk" >
+      <section  loading = "lazy" className="  h-heightMedium  lg:h-screen   bg-center bg-cover bg-no-repeat bk" >
         <Navbar />
 
         <main className=" p-4 lg:p-10">
@@ -23,39 +23,33 @@ import {Link} from 'react-router-dom'
                 <div className=" flex flex-col gap-6 text-center  mt-10 lg:mt-28">
 
                 <h1 className="font-extrabold  text-4xl md:text-6xl lg:text-8xl text-cyan-950">Motiva</h1>
-                <h3 className=" text-md lg:text-3xl text-white   font-bold  shadow">Create custom  designs from motivational quotes that are wearable and tappable.</h3>
+                <h3 className=" text-md lg:text-3xl text-white  font-bold  shadow">Create custom  designs from motivational quotes that are wearable and tappable.</h3>
                 </div>
          </main>
 
          
       </section>
-      <section className="grid grid-cols-2 text-cyan-900 lg:gap-8  p-4 lg:p-20 place-items-center">
-              <div className="flex flex-col  gap-6">
-                <h2 className="  font-extrabold text-cyan-800 text-3xl">GET QUOTES</h2>
-                <div className="font-semibold  text-justify lg:text-xl shadow-2xl lg:p-10 text-cyan-700">
+      <section className="grid lg:grid-cols-2 text-cyan-900  gap-8 p-4 lg:p-20 place-items-center">
+              <div className="flex flex-col gap-2 lg:gap-6">
+                <h2 className="  font-extrabold text-cyan-800 lg:text-3xl">GET QUOTES</h2>
+                <div className="font-semibold  text-justify lg:text-xl  p-4 shadow-2xl lg:p-10 text-cyan-700">
                   <h4 className="  ">Amazing quotes are a fantastic way for high achievers to maintain self-control, to stay motivated, and to offer hope to those who are struggling.</h4>
                   <span className=" block mt-8 text-justify-center">...  Anonymous</span>
                 </div>
-                <Link to = "/getquotes"><button className="items-center text-cyan-100  font-bold list-none justify-self-end bg-cyan-700 w-40 px-6  py-4 rounded-lg hover:scale-95">Get Quotes</button></Link>
+                <Link to = "/getquotes"><button className="items-center text-cyan-100  font-bold list-none justify-self-end bg-cyan-700 lg:w-40 px-6  py-4 rounded-lg hover:scale-95">Get Quotes</button></Link>
                 </div>        
 
               <img src={worryLess} alt="worry Less image" className="rounded drop-shadow-2xl " />
 
          </section>
 
-         <section className="randomQuotes">
-
-         </section>
-
-
-         <section className=" flex flex-col gap-5 p-4 lg:mx-16 rounded lg:p-20 text-white data-te-lazy-load-init background-motivas hangerheight hanger  ">
-            <h2 className=" text-center font-extrabold text-cyan-900 text-5xl "> CREATE YOUR MOTIVA</h2>
+          <section className=" flex flex-col  lg:mt-0 gap-5 p-4 lg:mx-16 rounded lg:p-20 text-white data-te-lazy-load-init background-motivas lg:hangerheight hanger  ">
+            <h2 className=" text-center font-extrabold text-cyan-900 lg:text-5xl "> CREATE YOUR MOTIVA</h2>
 
               <div className="font-bold  text-center lg:text-xl flex flex-col space-y-6 mx-auto lg:p-8  create">
-              <p className="shadow">Create personalized or generate regular quotes for your t-shirts or social media posts with Motiva,</p>
-              <p className="shadow">use them for your events, festivals, brand merchandise and more.</p>
+              <h3 className=" lg:w-3/4 lg:leading-[5rem] mx-auto  shadow">Create personalized or generate regular quotes for your t-shirts or social media posts with Motiva,use them for your events, festivals, brand merchandise and more.</h3>
               </div>
-              <Link to = "/howitworks"><button className="flex flex-col items-center mx-auto justify-center text-cyan-100 text-center font-bold list-none justify-self-end bg-cyan-900  px-6  py-4 rounded-lg hover:scale-95">Get Your Motiva</button></Link>            
+              <Link to = "/howitworks" className="mx-auto"><button className=" text-cyan-100 text-center font-bold list-none justify-self-end bg-cyan-900  px-6  py-4 rounded-lg hover:scale-95">Get Your Motiva</button></Link>            
 
          </section>
          <Footer />
