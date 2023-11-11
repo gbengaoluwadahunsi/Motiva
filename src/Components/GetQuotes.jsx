@@ -97,8 +97,8 @@ function GetQuotes() {
             className="border-2  border-cyan-600 mt-2 text-cyan-900 w-full  outline-none lg:font-bold py-2 px-4 mx-auto text-center rounded"
            
           >
-            <option value="" className='w-10'>Select a quote search option</option>
-            <option value="keyword" className='w-10'>
+            <option value="" >Select a quote search option</option>
+            <option value="keyword" >
               Search by keyword 
             </option>
             <option value="author">
