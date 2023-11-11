@@ -99,10 +99,10 @@ function GetQuotes() {
           >
             <option value="" className='w-10'>Select a quote search option</option>
             <option value="keyword" className='w-10'>
-              Enter search query by keyword (e.g life, work, exercise, meditation, prayer, etc...)
+              Search by keyword 
             </option>
             <option value="author">
-              Enter search query by author&apos;s name
+              Search by author&apos;s name
             </option>
           </select>
           
