@@ -39,48 +39,48 @@ const MakeYourDesigns = ({ quote }) => {
   return (
     <>
       <Navbar />
-      <div className="p-4 lg:p-20 border h-screen border-gray-300 rounded">
-        <h2 className="text-2xl font-bold grid place-items-center text-cyan-900 mb-8">
+      <div className="p-4 lg:p-20 border  border-gray-300 mobileDesignHeight   rounded">
+        <h2 className="lg:text-2xl font-bold  grid place-items-center text-cyan-900 lg:mb-8">
           T-Shirt Design 
         </h2>
 
-        <div className="grid lg:grid-cols-5 imageHeight mt-10">
-          <div className="">
-            <div className="mb-4">
-              <label className="block font-bold mb-2"> Customize T-Shirt Color:</label>
+        <div className="grid  grid-rows-3  md:grid-cols-5  lg:grid-cols-5 imageHeight  mt-10">
+          <div className=' flex flex-rol lg:grid mx-auto text-center lg:grid-row-3 gap-8 '>
+            <div className="">
+              <label className="block   lg:font-bold mb-2"> T-Shirt Color:</label>
               <input
                 type="color"
                 value={tshirtColor}
                 onChange={handleTshirtColorChange}
-                className="border border-cyan-300 h-20 w-20 rounded"
+                className="border border-cyan-300 lg:h-20  lg:w-20 rounded"
               />
             </div>
 
-            <div className="mb-4">
-              <label className="block font-bold mb-2"> Customize Quote Text Color:</label>
+            <div className="">
+              <label className="block lg:font-bold mb-2"> Text Color:</label>
               <input
                 type="color"
                 value={textColor}
                 onChange={handleTextColorChange}
-                className="border border-cyan-300 h-20 w-20 rounded"
+                className="border border-cyan-300 lg:h-20 lg:w-20 rounded"
               />
             </div>
 
-            <div className="mb-4">
-              <label className="block font-bold mb-2"> Adjust Font Size:</label>
+            <div className="">
+              <label className="block lg:font-bold mb-2">  Font Size:</label>
               <input
                 type="number"
                 value={fontSize}
                 onChange={handleFontSizeChange}
-                className="border text-center border-cyan-300 h-10 w-20 rounded"
+                className="border text-center border-cyan-300 lg:h-10 lg:w-20 rounded"
                 min="10"
                 max="10"
               />
             </div>
           </div>
 
-          <div id="tshirt-design" className="col-span-3  rounded-lg grid place-items-center p-8   text-center">
-            <div className='lg:w-1/2 lg:h-full'>
+          <div id="tshirt-design" className="  lg:col-span-3  rounded-lg grid place-items-center lg:p-8   text-center">
+            <div className='lg:w-1/2  lg:h-full'>
               <div
                 style={{
                   width: '100%',
@@ -90,7 +90,7 @@ const MakeYourDesigns = ({ quote }) => {
                   overflow: 'hidden',
                 }}
               >
-                <img src="https://i.imgur.com/frhnBT1.png" alt="T-Shirt Design" className='w-full  h-full object-contain'/>
+                <img src="https://i.imgur.com/frhnBT1.png" alt="T-Shirt Design" className='w-full h-full object-contain'/>
 
                 <div
                 className=' h-48 w-56 text-center font-bold absolute'
@@ -112,10 +112,10 @@ const MakeYourDesigns = ({ quote }) => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center   relative mt-4">
+        <div className="flex justify-center  pt-48 relative ">
           <button
             onClick={handleDownloadClick}
-            className="mr-4 bg-cyan-500 hover:bg-cyan-900 mt-20 text-white font-bold py-2 px-4 rounded"
+            className=" bg-cyan-500 hover:bg-cyan-900  text-white  lg:font-bold  py-1 lg:py-2 px-4 rounded"
           >
             Download
           </button>

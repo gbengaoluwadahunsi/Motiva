@@ -98,11 +98,12 @@ function GetQuotes() {
            
           >
             <option value="" >Select a quote search option</option>
-            <option value="keyword" >
-              Search by keyword 
-            </option>
+            
             <option value="author">
               Search by author&apos;s name
+            </option>
+            <option value="keyword">
+              Search by keyword 
             </option>
           </select>
           

@@ -29,14 +29,14 @@ import {Link} from 'react-router-dom'
 
          
       </section>
-      <section className="grid lg:grid-cols-2 text-cyan-900  gap-8 p-4 lg:p-20 place-items-center">
+      <section className="grid md:grid-cols-2 lg:grid-cols-2 text-cyan-900  gap-8 p-4 lg:p-20 place-items-center">
               <div className="flex flex-col gap-2 lg:gap-6">
                 <h2 className="  font-extrabold text-cyan-800 lg:text-3xl">GET QUOTES</h2>
                 <div className="font-semibold  text-justify lg:text-xl  p-4 shadow-2xl lg:p-10 text-cyan-700">
                   <h4 className="  ">Amazing quotes are a fantastic way for high achievers to maintain self-control, to stay motivated, and to offer hope to those who are struggling.</h4>
                   <span className=" block mt-8 text-justify-center">...  Anonymous</span>
                 </div>
-                <Link to = "/getquotes"><button className="items-center text-cyan-100  font-bold list-none justify-self-end bg-cyan-700 lg:w-40 px-6  py-4 rounded-lg hover:scale-95">Get Quotes</button></Link>
+                <Link to = "/getquotes"><button className="items-center text-cyan-100  font-bold list-none justify-self-end bg-cyan-700  md:w-25 lg:w-40 px-6  py-4 rounded-lg hover:scale-95">Get Quotes</button></Link>
                 </div>        
 
               <img src={worryLess} alt="worry Less image" className="rounded drop-shadow-2xl " />
