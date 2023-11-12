@@ -35,7 +35,7 @@ import { Link } from 'react-router-dom'
        </div>
 
 
-       <Link to="/getquotes"><button  className="items-center text-cyan-100   font-bold list-none justify-self-end bg-cyan-700 lg:w-40 px-6  py-4 rounded-lg hover:scale-95">
+       <Link to="/getquotes"><button  className="items-center text-cyan-100   font-bold list-none justify-self-end bg-cyan-700 lg:w-40 px-6   py-2 lg:py-4 rounded-lg hover:scale-95">
         Get Started</button>
         </Link>
      </div>

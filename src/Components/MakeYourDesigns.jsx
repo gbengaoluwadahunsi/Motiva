@@ -45,7 +45,7 @@ const MakeYourDesigns = ({ quote }) => {
         </h2>
 
         <div className="grid  grid-rows-3  md:grid-cols-5  lg:grid-cols-5 imageHeight  mt-10">
-          <div className=' flex flex-rol lg:grid mx-auto text-center lg:grid-row-3 gap-8 '>
+          <div className=' flex flex-rol md:grid  lg:grid lg:grid-row-3 gap-8 mx-auto text-center  '>
             <div className="">
               <label className="block   lg:font-bold mb-2"> T-Shirt Color:</label>
               <input
@@ -79,7 +79,7 @@ const MakeYourDesigns = ({ quote }) => {
             </div>
           </div>
 
-          <div id="tshirt-design" className="  lg:col-span-3  rounded-lg grid place-items-center lg:p-8   text-center">
+          <div id="tshirt-design" className="  md:col-span-3 lg:col-span-3  rounded-lg grid place-items-center lg:p-8   text-center">
             <div className='lg:w-1/2  lg:h-full'>
               <div
                 style={{
@@ -112,10 +112,10 @@ const MakeYourDesigns = ({ quote }) => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center  pt-48 relative ">
+        <div className="flex justify-center  pt-52 relative ">
           <button
             onClick={handleDownloadClick}
-            className=" bg-cyan-500 hover:bg-cyan-900  text-white  lg:font-bold  py-1 lg:py-2 px-4 rounded"
+            className=" bg-cyan-500 hover:bg-cyan-900  text-white  lg:font-bold py-2 px-4 rounded"
           >
             Download
           </button>
