@@ -55,7 +55,7 @@ const SignUp = () => {
 
   return (
     <div className="h-screen grid place-items-center bg-center login-background">
-      <div className="bg-white text-center mx-auto grid grid-rows-7   gap-2 p-6 h-full rounded-lg lg:w-1/4">
+      <div className="bg-white text-center mx-auto grid grid-rows-7   gap-2 p-6  rounded-lg lg:w-1/4">
         <img
           className="w-10 h-10 lg:w-20 rounded-full border-4 border-cyan-950 mx-auto lg:h-20"
           src={image}
@@ -110,7 +110,7 @@ const SignUp = () => {
           }}
         >
           {({ isSubmitting }) => (
-            <Form className="row-span-6 bg-white grid grid-row-5 ">
+            <Form className="row-span-6 bg-white grid grid-row-5 gap-2 ">
               <Field
                 className="px-4 h-14 rounded border-2 border-cyan-950 bg-gray-100 row-span-2"
                 type="text"
