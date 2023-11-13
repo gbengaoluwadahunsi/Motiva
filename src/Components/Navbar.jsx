@@ -9,7 +9,7 @@ const Navbar = ({ isAuthenticated, onSignOut }) => {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <div className="grid grid-cols-12  lg:font-medium p-4 lg:px-20 lg:py-3 bg-cyan-900">
+    <div className="grid grid-cols-12   lg:font-medium p-4 lg:px-20 py-3 bg-cyan-900">
       <Link to="/" className="lg:h-14">
         <img className=" lg:w-14  lg:h-14 rounded-full" src={motiva2} alt="motiva-logo" />
       </Link>
