@@ -23,7 +23,7 @@ const Homepage = () => {
       <section loading="lazy" className="  lg:h-screen bg-center bg-cover bg-no-repeat bk">
         <Navbar isAuthenticated={isAuthenticated} onSignOut={handleSignOut} />
 
-        <main className=" py-6 sm:py-20 md:py-14 xl:p-10">
+        <main className=" py-16 sm:py-20 md:py-14 xl:p-10">
           <div className="flex flex-col gap-6 text-center sm:mt-10 lg:mt-28">
             <h1 className="font-extrabold text-4xl md:text-6xl lg:text-8xl text-cyan-950">Motiva</h1>
             <h3 className="text-md lg:text-3xl text-white font-bold shadow">
