@@ -33,7 +33,7 @@ function Footer() {
 
         </div>
         <div>
-            <span className="flex  text-sm justify-center ">Copyright © 2023 MOTIVA. All rights reserved</span>
+            <span className="flex   text-xs lg:text-sm justify-center ">Copyright © 2023 MOTIVA. All rights reserved</span>
         </div>
     </div>
   )
