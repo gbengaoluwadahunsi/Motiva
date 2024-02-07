@@ -1,4 +1,4 @@
-// App.js
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
 import Homepage from './Components/Homepage';
